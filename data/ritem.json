@@ -1,0 +1,14 @@
+{
+  "predTestomDni": 2,
+  "dnevi": {
+    "1": { "prihod": "15:00", "odmor": 30, "bloki": 1, "blokiPredTestom": 2, "kata": "16:30", "karate": true },
+    "2": { "prihod": "14:30", "odmor": 30, "bloki": 2, "blokiPredTestom": 3, "kata": "zvečer", "karate": false, "zgodajSpat": true },
+    "3": { "prihod": "14:30", "odmor": 30, "bloki": 1, "blokiPredTestom": 1, "kata": "16:30", "karate": true, "najdaljsiDan": true },
+    "4": { "prihod": "14:30", "odmor": 30, "bloki": 2, "blokiPredTestom": 3, "kata": "zvečer", "karate": false },
+    "5": { "prihod": "14:30", "odmor": 30, "bloki": 0, "blokiPredTestom": 0, "kata": "", "karate": false, "ponovitevTedna": 15 },
+    "6": { "bloki": 0, "blokiPredTestom": 0, "sobotaBlokCeTestPonTor": true },
+    "7": { "bloki": 0, "blokiPredTestom": 0, "nedelja": "10 minut pogovora z mamo + prometni znaki" }
+  },
+  "karate": "Učenje končaj do 16:45, ob 17:00 greš na karate.",
+  "karateUrnik": "Odhod 17:00, trening na Ptuju 17:30–18:30, doma okoli 19:00."
+}

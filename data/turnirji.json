@@ -1,0 +1,87 @@
+{
+  "sprotni": [
+    { "id": "mat-ustno", "od": "2026-10-19", "predmet": "MAT", "vrsta": "ustno, sproti", "priprava": "vsak dan (kata)" },
+    { "id": "slj-ustno", "od": "2026-10-23", "predmet": "SLJ", "vrsta": "ustno, sproti", "priprava": "vsak dan (kata)" }
+  ],
+  "turnirji": [
+    {
+      "id": "slj-2026-12-10", "datum": "2026-12-10", "predmet": "SLJ", "vrsta": "pisno", "zacetek": "2026-11-16",
+      "potrditi": "Datum še potrditi: ob četrtkih SLJ ni v urniku.",
+      "kviz": "slj",
+      "priprave": [
+        { "id": "a", "besedilo": "Neumetnostno besedilo: preberem, odgovorim in vem, čemu je namenjeno" },
+        { "id": "b", "besedilo": "Odnos med besedami: sopomenke, protipomenke, nadpomenke, podpomenke" },
+        { "id": "c", "besedilo": "Samostalnik: najdem ga, določim spol in število" },
+        { "id": "d", "besedilo": "Besede nagajivke" },
+        { "id": "e", "besedilo": "Predlog s/z in k/h: 20 primerov brez napake" }
+      ]
+    },
+    {
+      "id": "mat-2026-12-14", "datum": "2026-12-14", "predmet": "MAT", "vrsta": "prvo pisno", "zacetek": "2026-11-30",
+      "kviz": "",
+      "priprave": [
+        { "id": "a", "besedilo": "Vprašam učiteljico za teme (do 30. 11.)", "vnos": "Teme:" },
+        { "id": "b", "besedilo": "5 nalog na vsako temo" },
+        { "id": "c", "besedilo": "Ponovim zvezek napak" },
+        { "id": "d", "besedilo": "Poskusni test doma, 45 min (12. ali 13. 12.)" }
+      ]
+    },
+    {
+      "id": "dru-2026-12-18", "datum": "2026-12-18", "predmet": "DRU", "vrsta": "praktično: slovenske pokrajine", "zacetek": "2026-11-23",
+      "kviz": "dru-pokrajine",
+      "priprave": [
+        { "id": "a", "besedilo": "Vprašam, kako poteka ocenjevanje" },
+        { "id": "b", "besedilo": "Za vsako pokrajino: lega, površje, vode, podnebje, mesta, dejavnosti" },
+        { "id": "c", "besedilo": "Slepi zemljevid brez pomoči" },
+        { "id": "d", "besedilo": "2-minutna predstavitev ene pokrajine" }
+      ]
+    },
+    {
+      "id": "dru-2027-01-07", "datum": "2027-01-07", "predmet": "DRU", "vrsta": "turistični vodnik", "zacetek": "2026-12-21",
+      "kviz": "",
+      "priprave": [
+        { "id": "a", "besedilo": "Navodila in kriteriji pred počitnicami" },
+        { "id": "b", "besedilo": "Izberem kraj in zberem gradivo" },
+        { "id": "c", "besedilo": "Osnutek, mama pregleda, popravim" },
+        { "id": "d", "besedilo": "Končni izdelek do 5. 1." },
+        { "id": "e", "besedilo": "Vaja predstavitve 6. 1." }
+      ]
+    },
+    {
+      "id": "tja-2027-01-12", "datum": "2027-01-12", "predmet": "TJA", "vrsta": "prvo pisno", "zacetek": "2027-01-04",
+      "kviz": "tja",
+      "priprave": [
+        { "id": "a", "besedilo": "Vprašam za enote", "vnos": "Enote:" },
+        { "id": "b", "besedilo": "Od 4. 1. vsak dan 10 min besed" },
+        { "id": "c", "besedilo": "Slovnica in delovni zvezek" }
+      ]
+    },
+    {
+      "id": "gos-2027-01-14", "datum": "2027-01-14", "predmet": "GOS", "vrsta": "pisno", "zacetek": "2027-01-07",
+      "kviz": "gos",
+      "priprave": [
+        { "id": "a", "besedilo": "Vprašam za teme", "vnos": "Teme:" },
+        { "id": "b", "besedilo": "Miselni vzorec za vsako temo" },
+        { "id": "c", "besedilo": "Mama me vpraša 10 vprašanj" }
+      ]
+    },
+    {
+      "id": "dru-2027-01-19", "datum": "2027-01-19", "predmet": "DRU", "vrsta": "časovni trak z nalogami", "zacetek": "2027-01-13",
+      "kviz": "dru-casovni-trak",
+      "priprave": [
+        { "id": "a", "besedilo": "Vprašam za obdobje", "vnos": "Obdobje:" },
+        { "id": "b", "besedilo": "Izdelam svoj časovni trak" },
+        { "id": "c", "besedilo": "Vaja: dogodek na pravo mesto, koliko let je minilo" }
+      ]
+    },
+    {
+      "id": "mat-2027-01-20", "datum": "2027-01-20", "predmet": "MAT", "vrsta": "geometrijska konstrukcija", "zacetek": "2027-01-11",
+      "kviz": "",
+      "priprave": [
+        { "id": "a", "besedilo": "Preverim šestilo, geotrikotnik, ravnilo, svinčnik (takoj)" },
+        { "id": "b", "besedilo": "Od 11. 1. vsak dan 15 min konstrukcij" },
+        { "id": "c", "besedilo": "Vsaka konstrukcija 3x: z navodili, brez, na čas" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "dejanja": {
+    "trening": { "ki": 1, "ime": "Trening 20 min" },
+    "branje": { "ki": 1, "ime": "15 min branja" },
+    "kata": { "ki": 1, "ime": "Kata dneva" },
+    "kviz": { "ki": 1, "ime": "Runda avto kviza" },
+    "napaka": { "ki": 1, "ime": "Popravljena napaka" },
+    "ponovitev": { "ki": 1, "ime": "Ponovitev tedna" },
+    "pocitnice": { "ki": 1, "ime": "Počitniški trening" },
+    "turnir_zacetek": { "ki": 3, "ime": "Pravočasen začetek priprave" },
+    "turnir_seznam": { "ki": 5, "ime": "Cel seznam priprav" }
+  },
+  "pasovi": [
+    { "ime": "beli", "od": 0, "barva": "#f5f5f4", "tekst": "#1c1917" },
+    { "ime": "rumeni", "od": 25, "barva": "#facc15", "tekst": "#1c1917" },
+    { "ime": "oranžni", "od": 60, "barva": "#f97316", "tekst": "#1c1917" },
+    { "ime": "zeleni", "od": 100, "barva": "#16a34a", "tekst": "#ffffff" },
+    { "ime": "modri", "od": 150, "barva": "#2563eb", "tekst": "#ffffff" },
+    { "ime": "rjavi", "od": 200, "barva": "#78350f", "tekst": "#ffffff" },
+    { "ime": "črni", "od": 260, "barva": "#0c0a09", "tekst": "#ffffff" }
+  ],
+  "nagrade": [
+    { "id": "roblox30", "ime": "30 minut Robloxa", "cena": 10 }
+  ]
+}

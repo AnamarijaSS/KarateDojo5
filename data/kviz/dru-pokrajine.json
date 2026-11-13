@@ -1,0 +1,38 @@
+{
+  "id": "dru-pokrajine",
+  "ime": "Družba: slovenske pokrajine",
+  "turnir": "dru-2026-12-18",
+  "navodilo": "Mama: učiteljica še ni potrdila, katero delitev pokrajin uporablja. Preveri v Adamovem zvezku in popravi ali dodaj vprašanja (mesto, reka ali značilnost → pokrajina).",
+  "vprasanja": [
+    {
+      "id": "dru-pokrajine-01",
+      "v": "Mesto Ptuj leži v kateri pokrajini?",
+      "o": "Podravje / Štajerska (preveri v zvezku)",
+      "preveri": true
+    },
+    {
+      "id": "dru-pokrajine-02",
+      "v": "Mesto Maribor leži v kateri pokrajini?",
+      "o": "Podravje / Štajerska (preveri v zvezku)",
+      "preveri": true
+    },
+    {
+      "id": "dru-pokrajine-03",
+      "v": "Mesto Koper leži v kateri pokrajini?",
+      "o": "Primorje (preveri v zvezku)",
+      "preveri": true
+    },
+    {
+      "id": "dru-pokrajine-04",
+      "v": "Reka Soča teče po kateri pokrajini?",
+      "o": "Primorje / Posočje (preveri v zvezku)",
+      "preveri": true
+    },
+    {
+      "id": "dru-pokrajine-05",
+      "v": "Po čem je znan Kras?",
+      "o": "Kraške jame, burja, kamnite hiše (preveri v zvezku)",
+      "preveri": true
+    }
+  ]
+}

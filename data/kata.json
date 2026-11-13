@@ -1,0 +1,9 @@
+{
+  "1": { "predmeti": ["SLJ", "MAT", "DRU"], "opomba": "" },
+  "2": { "predmeti": ["MAT", "SLJ", "TJA"], "opomba": "" },
+  "3": { "predmeti": ["SLJ", "MAT"], "opomba": "" },
+  "4": { "predmeti": ["MAT", "DRU", "GOS"], "opomba": "" },
+  "5": { "predmeti": [], "opomba": "Ponovitev celega tedna" },
+  "6": { "predmeti": [], "opomba": "" },
+  "7": { "predmeti": [], "opomba": "5 prometnih znakov za ponedeljkovo kolesarjenje" }
+}

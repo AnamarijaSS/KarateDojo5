@@ -1,0 +1,293 @@
+{
+  "id": "slj",
+  "ime": "Slovenščina: s/z, k/h, pomenke",
+  "turnir": "slj-2026-12-10",
+  "navodilo": "Preverjeno za 5. razred. Mama lahko vprašanja ureja in dodaja.",
+  "vprasanja": [
+    {
+      "id": "slj-01",
+      "v": "___ sestro (s ali z)?",
+      "o": "s sestro"
+    },
+    {
+      "id": "slj-02",
+      "v": "___ mamo (s ali z)?",
+      "o": "z mamo"
+    },
+    {
+      "id": "slj-03",
+      "v": "___ tatom (s ali z)?",
+      "o": "s tatom"
+    },
+    {
+      "id": "slj-04",
+      "v": "___ očetom (s ali z)?",
+      "o": "z očetom"
+    },
+    {
+      "id": "slj-05",
+      "v": "___ psom (s ali z)?",
+      "o": "s psom"
+    },
+    {
+      "id": "slj-06",
+      "v": "___ kolesom (s ali z)?",
+      "o": "s kolesom"
+    },
+    {
+      "id": "slj-07",
+      "v": "___ bratom (s ali z)?",
+      "o": "z bratom"
+    },
+    {
+      "id": "slj-08",
+      "v": "___ žogo (s ali z)?",
+      "o": "z žogo"
+    },
+    {
+      "id": "slj-09",
+      "v": "___ čokolado (s ali z)?",
+      "o": "s čokolado"
+    },
+    {
+      "id": "slj-10",
+      "v": "___ fantom (s ali z)?",
+      "o": "s fantom"
+    },
+    {
+      "id": "slj-11",
+      "v": "___ harmoniko (s ali z)?",
+      "o": "s harmoniko"
+    },
+    {
+      "id": "slj-12",
+      "v": "___ Janom (s ali z)?",
+      "o": "z Janom"
+    },
+    {
+      "id": "slj-13",
+      "v": "___ šolsko torbo (s ali z)?",
+      "o": "s šolsko torbo"
+    },
+    {
+      "id": "slj-14",
+      "v": "___ copati (s ali z)?",
+      "o": "s copati"
+    },
+    {
+      "id": "slj-15",
+      "v": "___ vilicami (s ali z)?",
+      "o": "z vilicami"
+    },
+    {
+      "id": "slj-16",
+      "v": "___ lopato (s ali z)?",
+      "o": "z lopato"
+    },
+    {
+      "id": "slj-17",
+      "v": "___ avtom (s ali z)?",
+      "o": "z avtom"
+    },
+    {
+      "id": "slj-18",
+      "v": "___ dedkom (s ali z)?",
+      "o": "z dedkom"
+    },
+    {
+      "id": "slj-19",
+      "v": "Kdaj pišemo »s«?",
+      "o": "Pred p, t, k, s, š, c, č, f, h (»ta suhi škafec pušča«)."
+    },
+    {
+      "id": "slj-20",
+      "v": "Kdaj pišemo »z«?",
+      "o": "Pred samoglasniki in pred zvenečimi soglasniki (b, d, g, z, ž, j, l, m, n, r, v)."
+    },
+    {
+      "id": "slj-21",
+      "v": "___ kolesu (k ali h)?",
+      "o": "h kolesu"
+    },
+    {
+      "id": "slj-22",
+      "v": "___ gori (k ali h)?",
+      "o": "h gori"
+    },
+    {
+      "id": "slj-23",
+      "v": "___ mami (k ali h)?",
+      "o": "k mami"
+    },
+    {
+      "id": "slj-24",
+      "v": "___ očetu (k ali h)?",
+      "o": "k očetu"
+    },
+    {
+      "id": "slj-25",
+      "v": "___ Gregorju (k ali h)?",
+      "o": "h Gregorju"
+    },
+    {
+      "id": "slj-26",
+      "v": "___ babici (k ali h)?",
+      "o": "k babici"
+    },
+    {
+      "id": "slj-27",
+      "v": "___ koncu (k ali h)?",
+      "o": "h koncu"
+    },
+    {
+      "id": "slj-28",
+      "v": "___ zdravniku (k ali h)?",
+      "o": "k zdravniku"
+    },
+    {
+      "id": "slj-29",
+      "v": "___ kosilu (k ali h)?",
+      "o": "h kosilu"
+    },
+    {
+      "id": "slj-30",
+      "v": "___ šoli (k ali h)?",
+      "o": "k šoli"
+    },
+    {
+      "id": "slj-31",
+      "v": "___ gasilcem (k ali h)?",
+      "o": "h gasilcem"
+    },
+    {
+      "id": "slj-32",
+      "v": "___ reki (k ali h)?",
+      "o": "k reki"
+    },
+    {
+      "id": "slj-33",
+      "v": "___ kmetu (k ali h)?",
+      "o": "h kmetu"
+    },
+    {
+      "id": "slj-34",
+      "v": "___ Ani (k ali h)?",
+      "o": "k Ani"
+    },
+    {
+      "id": "slj-35",
+      "v": "Kdaj pišemo »h«?",
+      "o": "Pred besedami, ki se začnejo na k ali g."
+    },
+    {
+      "id": "slj-36",
+      "v": "Sopomenka za »hiter«?",
+      "o": "uren, nagel"
+    },
+    {
+      "id": "slj-37",
+      "v": "Sopomenka za »govoriti«?",
+      "o": "praviti, pripovedovati"
+    },
+    {
+      "id": "slj-38",
+      "v": "Sopomenka za »lep«?",
+      "o": "čeden"
+    },
+    {
+      "id": "slj-39",
+      "v": "Sopomenka za »začeti«?",
+      "o": "pričeti"
+    },
+    {
+      "id": "slj-40",
+      "v": "Sopomenka za »ogromen«?",
+      "o": "velikanski"
+    },
+    {
+      "id": "slj-41",
+      "v": "Protipomenka za »visok«?",
+      "o": "nizek"
+    },
+    {
+      "id": "slj-42",
+      "v": "Protipomenka za »topel«?",
+      "o": "hladen, mrzel"
+    },
+    {
+      "id": "slj-43",
+      "v": "Protipomenka za »vesel«?",
+      "o": "žalosten"
+    },
+    {
+      "id": "slj-44",
+      "v": "Protipomenka za »dan«?",
+      "o": "noč"
+    },
+    {
+      "id": "slj-45",
+      "v": "Protipomenka za »odpreti«?",
+      "o": "zapreti"
+    },
+    {
+      "id": "slj-46",
+      "v": "Protipomenka za »hiter«?",
+      "o": "počasen"
+    },
+    {
+      "id": "slj-47",
+      "v": "Nadpomenka za: jabolko, hruška, sliva?",
+      "o": "sadje"
+    },
+    {
+      "id": "slj-48",
+      "v": "Nadpomenka za: pes, mačka, krava?",
+      "o": "živali"
+    },
+    {
+      "id": "slj-49",
+      "v": "Nadpomenka za: vrtnica, tulipan, marjetica?",
+      "o": "rože, cvetlice"
+    },
+    {
+      "id": "slj-50",
+      "v": "Nadpomenka za: kladivo, žaga, klešče?",
+      "o": "orodje"
+    },
+    {
+      "id": "slj-51",
+      "v": "Nadpomenka za: miza, stol, omara?",
+      "o": "pohištvo"
+    },
+    {
+      "id": "slj-52",
+      "v": "Povej eno podpomenko za »sadje«.",
+      "o": "npr. jabolko, hruška, banana"
+    },
+    {
+      "id": "slj-53",
+      "v": "Povej eno podpomenko za »zelenjava«.",
+      "o": "npr. korenček, solata, paprika"
+    },
+    {
+      "id": "slj-54",
+      "v": "Povej eno podpomenko za »ptica«.",
+      "o": "npr. vrabec, sinica, lastovka"
+    },
+    {
+      "id": "slj-55",
+      "v": "Povej eno podpomenko za »vozilo«.",
+      "o": "npr. avto, avtobus, kolo"
+    },
+    {
+      "id": "slj-56",
+      "v": "Kaj so sopomenke?",
+      "o": "Besede z enakim ali podobnim pomenom."
+    },
+    {
+      "id": "slj-57",
+      "v": "Kaj so protipomenke?",
+      "o": "Besede z nasprotnim pomenom."
+    }
+  ]
+}

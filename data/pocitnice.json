@@ -1,0 +1,8 @@
+{
+  "obdobja": [
+    { "od": "2026-12-24", "do": "2026-12-27", "nacin": "prosto", "besedilo": "Uživaj počitnice!" },
+    { "od": "2026-12-28", "do": "2026-12-30", "nacin": "plan", "besedilo": "Počitniški trening", "naloge": ["45 min turistični vodnik", "10 min angleških besed"] },
+    { "od": "2026-12-31", "do": "2027-01-01", "nacin": "prosto", "besedilo": "Uživaj počitnice!" },
+    { "od": "2027-01-02", "do": "2027-01-03", "nacin": "plan", "besedilo": "Počitniški trening, 30 min", "naloge": ["Turistični vodnik", "Angleške besede"] }
+  ]
+}

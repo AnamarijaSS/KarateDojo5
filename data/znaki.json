@@ -1,0 +1,28 @@
+{
+  "navodilo": "Vsako nedeljo 5 znakov za ponedeljkovo kolesarjenje. Slike so preproste risbe, ne uradne podobe.",
+  "znaki": [
+    { "id": "stop", "oblika": "osmerokotnik", "simbol": "STOP", "opis": "Rdeč osmerokotnik z belim napisom STOP", "pomen": "Ustavi se in daj prednost vsem." },
+    { "id": "prednost", "oblika": "trikotnik-obrnjen", "simbol": "", "opis": "Bel trikotnik s konico navzdol in rdečim robom", "pomen": "Daj prednost vozilom na cesti, na katero zapeljuješ." },
+    { "id": "prednostna", "oblika": "romb", "simbol": "", "opis": "Rumen kvadrat, postavljen na konico, z belim robom", "pomen": "Vozim po prednostni cesti." },
+    { "id": "kolesarska-steza", "oblika": "krog-moder", "simbol": "kolo", "opis": "Moder krog z belim kolesom", "pomen": "Steza za kolesarje, kolesar mora voziti po njej." },
+    { "id": "prehod", "oblika": "kvadrat-moder", "simbol": "pesec", "opis": "Moder kvadrat z belim trikotnikom in pešcem", "pomen": "Prehod za pešce." },
+
+    { "id": "prepoved-obe", "oblika": "krog-rdec", "simbol": "", "opis": "Bel krog z rdečim robom, prazen", "pomen": "Promet je prepovedan v obeh smereh." },
+    { "id": "prepoved-smer", "oblika": "krog-poln-rdec", "simbol": "crta", "opis": "Rdeč krog z belo vodoravno črto", "pomen": "Vožnja v to smer je prepovedana." },
+    { "id": "prepoved-kolo", "oblika": "krog-rdec", "simbol": "kolo", "opis": "Bel krog z rdečim robom in črnim kolesom", "pomen": "Tu kolesarji ne smejo voziti." },
+    { "id": "otroci", "oblika": "trikotnik", "simbol": "otroka", "opis": "Bel trikotnik z rdečim robom in dvema otrokoma", "pomen": "Pozor, otroci na cesti (blizu šole ali igrišča)." },
+    { "id": "krozni", "oblika": "krog-moder", "simbol": "krog", "opis": "Moder krog s tremi belimi puščicami v krogu", "pomen": "Krožno križišče, vozi v krogu." },
+
+    { "id": "desno", "oblika": "krog-moder", "simbol": "desno", "opis": "Moder krog z belo puščico v desno", "pomen": "Obvezna smer v desno." },
+    { "id": "omejitev-50", "oblika": "krog-rdec", "simbol": "50", "opis": "Bel krog z rdečim robom in številko 50", "pomen": "Največja dovoljena hitrost je 50 km/h." },
+    { "id": "slepa", "oblika": "kvadrat-moder", "simbol": "slepa", "opis": "Moder kvadrat z belo črto, ki se konča z rdečim prečnim delom", "pomen": "Slepa ulica, naprej se ne da." },
+    { "id": "semafor", "oblika": "trikotnik", "simbol": "semafor", "opis": "Bel trikotnik z rdečim robom in semaforjem", "pomen": "Pozor, spredaj je semafor." },
+    { "id": "nevarnost", "oblika": "trikotnik", "simbol": "!", "opis": "Bel trikotnik z rdečim robom in klicajem", "pomen": "Pozor, druga nevarnost." },
+
+    { "id": "enosmerna", "oblika": "kvadrat-moder", "simbol": "gor", "opis": "Moder kvadrat z belo puščico navzgor", "pomen": "Enosmerna cesta." },
+    { "id": "kolesarji-pozor", "oblika": "trikotnik", "simbol": "kolo", "opis": "Bel trikotnik z rdečim robom in kolesom", "pomen": "Pozor, kolesarji na cesti." },
+    { "id": "levo-prepoved", "oblika": "krog-rdec", "simbol": "levo-precrtano", "opis": "Bel krog z rdečim robom in prečrtano puščico v levo", "pomen": "Zavijanje v levo je prepovedano." },
+    { "id": "parkirisce", "oblika": "kvadrat-moder", "simbol": "P", "opis": "Moder kvadrat z belo črko P", "pomen": "Parkirišče." },
+    { "id": "pesci-prepoved", "oblika": "krog-rdec", "simbol": "pesec", "opis": "Bel krog z rdečim robom in pešcem", "pomen": "Pešci tu ne smejo hoditi." }
+  ]
+}

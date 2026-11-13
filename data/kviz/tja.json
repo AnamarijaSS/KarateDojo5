@@ -1,0 +1,158 @@
+{
+  "id": "tja",
+  "ime": "Angleščina: besede",
+  "turnir": "tja-2027-01-12",
+  "navodilo": "Mama: to so začetni primeri. Dodaj besede iz enot, ki jih Adam prinese iz šole. Vprašanje je slovenska beseda, odgovor angleška.",
+  "vprasanja": [
+    {
+      "id": "tja-01",
+      "v": "Kako se reče: pes?",
+      "o": "dog"
+    },
+    {
+      "id": "tja-02",
+      "v": "Kako se reče: mačka?",
+      "o": "cat"
+    },
+    {
+      "id": "tja-03",
+      "v": "Kako se reče: hiša?",
+      "o": "house"
+    },
+    {
+      "id": "tja-04",
+      "v": "Kako se reče: šola?",
+      "o": "school"
+    },
+    {
+      "id": "tja-05",
+      "v": "Kako se reče: knjiga?",
+      "o": "book"
+    },
+    {
+      "id": "tja-06",
+      "v": "Kako se reče: miza?",
+      "o": "table"
+    },
+    {
+      "id": "tja-07",
+      "v": "Kako se reče: stol?",
+      "o": "chair"
+    },
+    {
+      "id": "tja-08",
+      "v": "Kako se reče: okno?",
+      "o": "window"
+    },
+    {
+      "id": "tja-09",
+      "v": "Kako se reče: vrata?",
+      "o": "door"
+    },
+    {
+      "id": "tja-10",
+      "v": "Kako se reče: rdeča?",
+      "o": "red"
+    },
+    {
+      "id": "tja-11",
+      "v": "Kako se reče: modra?",
+      "o": "blue"
+    },
+    {
+      "id": "tja-12",
+      "v": "Kako se reče: zelena?",
+      "o": "green"
+    },
+    {
+      "id": "tja-13",
+      "v": "Kako se reče: rumena?",
+      "o": "yellow"
+    },
+    {
+      "id": "tja-14",
+      "v": "Kako se reče: ena, dva, tri?",
+      "o": "one, two, three"
+    },
+    {
+      "id": "tja-15",
+      "v": "Kako se reče: mama?",
+      "o": "mother, mum"
+    },
+    {
+      "id": "tja-16",
+      "v": "Kako se reče: oče?",
+      "o": "father, dad"
+    },
+    {
+      "id": "tja-17",
+      "v": "Kako se reče: brat?",
+      "o": "brother"
+    },
+    {
+      "id": "tja-18",
+      "v": "Kako se reče: sestra?",
+      "o": "sister"
+    },
+    {
+      "id": "tja-19",
+      "v": "Kako se reče: jabolko?",
+      "o": "apple"
+    },
+    {
+      "id": "tja-20",
+      "v": "Kako se reče: voda?",
+      "o": "water"
+    },
+    {
+      "id": "tja-21",
+      "v": "Kako se reče: kruh?",
+      "o": "bread"
+    },
+    {
+      "id": "tja-22",
+      "v": "Kako se reče: mleko?",
+      "o": "milk"
+    },
+    {
+      "id": "tja-23",
+      "v": "Kako se reče: sonce?",
+      "o": "sun"
+    },
+    {
+      "id": "tja-24",
+      "v": "Kako se reče: dež?",
+      "o": "rain"
+    },
+    {
+      "id": "tja-25",
+      "v": "Kako se reče: zvezek?",
+      "o": "notebook, exercise book"
+    },
+    {
+      "id": "tja-26",
+      "v": "Kako se reče: svinčnik?",
+      "o": "pencil"
+    },
+    {
+      "id": "tja-27",
+      "v": "Kako se reče: prijatelj?",
+      "o": "friend"
+    },
+    {
+      "id": "tja-28",
+      "v": "Kako se reče: igrati se?",
+      "o": "play"
+    },
+    {
+      "id": "tja-29",
+      "v": "Kako se reče: teči?",
+      "o": "run"
+    },
+    {
+      "id": "tja-30",
+      "v": "Kako se reče: jesti?",
+      "o": "eat"
+    }
+  ]
+}

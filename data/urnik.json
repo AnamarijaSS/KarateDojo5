@@ -1,0 +1,26 @@
+{
+  "ure": [
+    { "ura": 0, "cas": "7:30–8:15", "dnevi": ["", "", "dodatni pouk", "", ""] },
+    { "ura": 1, "cas": "8:20–9:05", "dnevi": ["SLJ", "MAT", "SLJ", "MAT", "SLJ"] },
+    { "ura": 2, "cas": "9:10–9:55", "dnevi": ["MAT", "GUM", "ŠPO", "TJA", "SLJ"] },
+    { "ura": 3, "cas": "10:15–11:00", "dnevi": ["ŠPO", "SLJ", "MAT", "DRU", "TJA (učne skupine)"] },
+    { "ura": 4, "cas": "11:05–11:50", "dnevi": ["DRU", "TJA", "LUM", "DRU", "GUM (lihi teden) / RU (sodi teden)"] },
+    { "ura": 5, "cas": "11:55–12:40", "dnevi": ["DRU", "DRU", "LUM", "GOS", "DRU"] },
+    { "ura": 6, "cas": "13:05–13:50", "dnevi": ["Kolesarjenje", "Računalniško opismenjevanje", "", "ŠPO", ""] },
+    { "ura": 7, "cas": "13:55–14:40", "dnevi": ["Fischertechnik", "", "", "", ""] }
+  ],
+  "zamenjave": [
+    { "od": "2027-02-01", "iz": "DRU", "v": "NIT", "opomba": "V 2. polletju je DRU zamenjan z NIT." }
+  ],
+  "predmeti": {
+    "SLJ": "Slovenščina",
+    "MAT": "Matematika",
+    "DRU": "Družba",
+    "NIT": "Naravoslovje in tehnika",
+    "TJA": "Angleščina",
+    "GOS": "Gospodinjstvo",
+    "GUM": "Glasba",
+    "LUM": "Likovna umetnost",
+    "ŠPO": "Šport"
+  }
+}

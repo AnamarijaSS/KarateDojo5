@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#b91c1c"/>
+  <circle cx="256" cy="232" r="150" fill="#fafaf9"/>
+  <rect x="96" y="300" width="320" height="56" rx="14" fill="#1c1917"/>
+  <rect x="226" y="286" width="60" height="84" rx="12" fill="#1c1917"/>
+  <path d="M232 370 L196 446 L238 446 L256 392 Z" fill="#1c1917"/>
+  <path d="M280 370 L316 446 L274 446 L256 392 Z" fill="#1c1917"/>
+  <text x="256" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="120" font-weight="800" fill="#b91c1c">Ki</text>
+</svg>
