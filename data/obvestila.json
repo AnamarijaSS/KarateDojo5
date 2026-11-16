@@ -1,0 +1,13 @@
+{
+  "navodilo": "Kdaj telefon opomni. Adam: čas opomnika za trening po dnevih (prazno = brez). Mama: večerni opomnik, če kaj čaka na potrditev.",
+  "adam": {
+    "1": "15:30",
+    "2": "15:00",
+    "3": "15:00",
+    "4": "15:00",
+    "5": "15:00",
+    "6": "10:00",
+    "7": ""
+  },
+  "mama": "20:00"
+}

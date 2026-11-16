@@ -11,7 +11,7 @@ import type { Content, DojoEvent, Pas, Sklop, Turnir, Vprasanje } from "@/lib/ty
 import { PairingCode } from "./Onboarding";
 import { Empty, Icon, Modal, PinPad, Screen } from "./ui";
 
-export type ParentView = "domov" | "potrdi" | "unovci" | "teden" | "kviz" | "nastavitve" | "uredi-turnirje" | "uredi-kviz" | "uredi-nagrade" | "uredi-pasove" | "uredi-urnik" | "uredi-pocitnice" | "naprave" | "kopija" | "pin";
+export type ParentView = "domov" | "potrdi" | "unovci" | "teden" | "kviz" | "nastavitve" | "obvestila" | "uredi-turnirje" | "uredi-kviz" | "uredi-nagrade" | "uredi-pasove" | "uredi-urnik" | "uredi-pocitnice" | "naprave" | "kopija" | "pin";
 
 const VRSTA_IME: Record<string, string> = {
   trening: "Trening", branje: "Branje", kata: "Kata", kviz: "Avto kviz", napaka: "Popravljena napaka",
@@ -231,6 +231,7 @@ export function Week() {
 
 export function Settings({ go }: { go: (v: ParentView) => void }) {
   const items: [ParentView, string, Parameters<typeof Icon>[0]["name"]][] = [
+    ["obvestila", "Obvestila", "clock"],
     ["uredi-turnirje", "Turnirji in priprave", "trophy"],
     ["uredi-kviz", "Vprašanja za kviz", "car"],
     ["uredi-nagrade", "Nagrade", "gift"],

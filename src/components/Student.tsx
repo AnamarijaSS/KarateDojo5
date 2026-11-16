@@ -7,6 +7,7 @@ import { ls } from "@/lib/idb";
 import { countdownColor, datedTournaments, pickQuizSet, signsForWeek, tipForDay } from "@/lib/plan";
 import { addEvent, addMistake, fixMistake, giveFeedback, setChecklist } from "@/lib/store";
 import type { DojoEvent, Turnir, Vprasanje } from "@/lib/types";
+import { PushToggle } from "./Push";
 import { Sign } from "./Sign";
 import { gong, loadTimer, minutes, saveTimer, setSoundOn, soundOn, TimerFace, unlockAudio, useCountdown, type TimerState } from "./Timer";
 import { BeltBar, Empty, Icon, Modal, Screen, Toggle } from "./ui";
@@ -74,6 +75,7 @@ export function Today({ go, startTimer }: { go: (v: StudentView, arg?: string) =
     <Screen>
       <KiHeader />
       <Rejections events={events} />
+      <PushToggle who="adam" compact />
       <p className="px-1 text-lg font-bold capitalize">{dayName(today)}, {fmtDate(today)}</p>
       <div className="card flex gap-3 bg-card"><Icon name="star" className="shrink-0 text-warn" /><p className="italic">{tipForDay(today, c)}</p></div>
 
@@ -503,7 +505,7 @@ export function Quiz({ parentHint = false }: { parentHint?: boolean }) {
         </div>
       )}
       <div className="card flex flex-col gap-2">
-        <p className="font-semibold">{parentHint ? "Adam bere vprašanje in odgovori na glas. Ti rečeš prav ali narobe." : "Preberi vprašanje na glas in odgovori. Mama reče prav ali narobe, ti tapneš."}</p>
+        <p className="font-semibold">{parentHint ? "Adam bere vprašanje in odgovori na glas. Ti rečeš prav ali narobe." : "Preberi vprašanje na glas in odgovori. Mama ali oči reče prav ali narobe, ti tapneš."}</p>
         <p className="text-base text-muted">Kdor vozi, ne tapa po telefonu.</p>
       </div>
       <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Tema">
@@ -587,6 +589,7 @@ export function Rewards() {
         </div>
       ))}
       <p className="px-1 text-base text-muted">Nagrado unovči mama na svojem telefonu. Pas ostane, tudi ko porabiš točke.</p>
+      <PushToggle who="adam" />
       <p className="mt-2 px-1 font-bold">Pot do črnega pasu</p>
       <div className="card flex flex-col gap-2">
         {pasovi.map((p, i) => (

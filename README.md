@@ -57,6 +57,18 @@ npm run e2e                 # dva brskalnika: Adam in mama
 
    `NEXT_PUBLIC_ALLOW_DATE_OVERRIDE` v produkciji **ne** nastavi.
 
+## Potisna obvestila
+
+* Adam: opomnik za trening (privzeto pon 15:30, tor do pet 15:00, sobota 10:00 samo pred testom v pon ali tor, nedelja brez). Med počitnicami »prosto« ga ni.
+* Mama: ob 20:00, samo če kaj čaka na potrditev.
+* Ure ureja mama v **Več → Obvestila**. Vsak telefon obvestila vklopi ali izklopi sam.
+* Delovanje: `pg_cron` vsakih 5 minut pokliče Edge funkcijo `push` (`supabase/functions/push`). Ta pošlje obvestilo največ enkrat na dan (`push_log`). Šifriranje in podpis sta narejena z vgrajenim WebCrypto, brez zunanjih knjižnic. Ključa VAPID ustvari funkcija sama in ju hrani v tabeli `app_settings`, do katere naprave nimajo dostopa.
+* Na iPhonu delujejo samo v aplikaciji na domačem zaslonu, iOS 16.4 ali novejši.
+
+Objava (ročno v nadzorni plošči Supabase): `node scripts/produkcija.mjs https://<projekt>.supabase.co` pripravi `supabase/produkcija/1-baza-obvestila.sql` (SQL Editor) in `2-funkcija-push.ts` (Edge Functions → nova funkcija `push`, brez preverjanja JWT).
+
+Preizkus: `npx supabase functions serve --no-verify-jwt &` in `node tests/e2e/obvestila.mjs`.
+
 ## Prvi zagon na telefonih (iPhone)
 
 1. Na maminem telefonu odpri naslov aplikacije v Safariju → **Deli → Dodaj na začetni zaslon** → odpri **Dojo** z domačega zaslona → **Mama** → izberi PIN.

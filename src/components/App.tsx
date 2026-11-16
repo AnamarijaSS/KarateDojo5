@@ -6,6 +6,7 @@ import { useDerived, useDojo } from "@/lib/hooks";
 import { ls } from "@/lib/idb";
 import { clearError, start, syncNow, verifyPin } from "@/lib/store";
 import { Onboarding } from "./Onboarding";
+import { NotificationSettings } from "./Push";
 import {
   Backup, ChangePin, Confirm, Devices, EditBelts, EditHolidays, EditQuiz, EditRewards, EditSchedule, EditTournaments,
   ParentHome, Redeem, Settings, Week, type ParentView,
@@ -55,7 +56,7 @@ function ClientApp() {
         // shrani že naložene datoteke, da se aplikacija odpre tudi brez povezave
         try {
           const urls = performance.getEntriesByType("resource").map((e) => e.name).filter((u) => u.startsWith(location.origin) && u.includes("/_next/static/"));
-          void caches.open("dojo-v1").then((c) => c.addAll(urls)).catch(() => undefined);
+          void caches.open("dojo-v2").then((c) => c.addAll(urls)).catch(() => undefined);
         } catch { /* ignoriraj */ }
       }).catch(() => undefined);
     }
@@ -220,6 +221,7 @@ function ParentApp() {
     case "naprave": body = <Devices onBack={back} />; break;
     case "pin": body = <ChangePin onBack={back} />; break;
     case "kopija": body = <Backup onBack={back} />; break;
+    case "obvestila": body = <NotificationSettings onBack={back} />; break;
     default: body = <ParentHome go={go} />;
   }
   return (
@@ -230,7 +232,7 @@ function ParentApp() {
         { v: "potrdi", label: "Potrdi", icon: "check", badge: pending.filter((e) => !e.local).length },
         { v: "unovci", label: "Nagrade", icon: "gift" },
         { v: "kviz", label: "Kviz", icon: "car" },
-        { v: "nastavitve", label: "Več", icon: "gear", also: ["uredi-turnirje", "uredi-kviz", "uredi-nagrade", "uredi-pasove", "uredi-urnik", "uredi-pocitnice", "naprave", "pin", "kopija"] },
+        { v: "nastavitve", label: "Več", icon: "gear", also: ["uredi-turnirje", "uredi-kviz", "uredi-nagrade", "uredi-pasove", "uredi-urnik", "uredi-pocitnice", "naprave", "pin", "kopija", "obvestila"] },
       ]} />
     </>
   );

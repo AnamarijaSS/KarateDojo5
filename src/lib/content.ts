@@ -7,6 +7,7 @@ import turnirji from "../../data/turnirji.json";
 import ki from "../../data/ki.json";
 import znaki from "../../data/znaki.json";
 import nasveti from "../../data/nasveti.json";
+import obvestila from "../../data/obvestila.json";
 import slj from "../../data/kviz/slj.json";
 import druPokrajine from "../../data/kviz/dru-pokrajine.json";
 import tja from "../../data/kviz/tja.json";
@@ -27,6 +28,7 @@ export const DEFAULT_CONTENT: Content = {
   ),
   znaki: znaki as Content["znaki"],
   nasveti: nasveti as string[],
+  obvestila: obvestila as Content["obvestila"],
 };
 
 export const CONTENT_KEYS = Object.keys(DEFAULT_CONTENT) as ContentKey[];

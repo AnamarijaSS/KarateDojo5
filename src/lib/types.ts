@@ -31,6 +31,8 @@ export interface Znak { id: string; oblika: string; simbol: string; opis: string
 export interface ZnakiData { navodilo: string; znaki: Znak[] }
 export interface SolskoLeto { sola: string; razred: string; solskoLeto: string; konecObdobja: ISODate; drugoPolletjeOd: ISODate; lihiTedenPravilo: "iso" | "iso-obratno" }
 
+export interface ObvestilaData { navodilo?: string; adam: Record<string, string>; mama: string }
+
 export interface Content {
   "solsko-leto": SolskoLeto;
   urnik: UrnikData;
@@ -42,6 +44,7 @@ export interface Content {
   kviz: Record<string, Sklop>;
   znaki: ZnakiData;
   nasveti: string[];
+  obvestila: ObvestilaData;
 }
 export type ContentKey = keyof Content;
 

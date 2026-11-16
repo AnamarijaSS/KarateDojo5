@@ -1,6 +1,6 @@
 // Service worker: aplikacija se odpre tudi brez povezave.
 // Podatki gredo na Supabase (druga domena) in jih tu ne predpomnimo.
-const CACHE = "dojo-v1";
+const CACHE = "dojo-v2";
 const SHELL = ["/", "/manifest.webmanifest", "/icon.svg", "/apple-touch-icon.png"];
 
 self.addEventListener("install", (e) => {
@@ -47,5 +47,23 @@ self.addEventListener("fetch", (e) => {
           return res;
         }),
     ),
+  );
+});
+
+// Potisna obvestila (opomnik za trening, mamin večerni pregled).
+self.addEventListener("push", (e) => {
+  let d = { title: "Adamov Dojo", body: "", url: "/" };
+  try { d = { ...d, ...e.data.json() }; } catch { if (e.data) d.body = e.data.text(); }
+  e.waitUntil(self.registration.showNotification(d.title, { body: d.body, icon: "/icon-192.png", badge: "/icon-192.png", data: { url: d.url } }));
+});
+
+self.addEventListener("notificationclick", (e) => {
+  e.notification.close();
+  const url = (e.notification.data && e.notification.data.url) || "/";
+  e.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((list) => {
+      for (const c of list) if ("focus" in c) return c.focus();
+      return self.clients.openWindow(url);
+    }),
   );
 });
