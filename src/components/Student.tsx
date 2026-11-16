@@ -473,7 +473,7 @@ export function Quiz({ parentHint = false }: { parentHint?: boolean }) {
   if (round && !finished) {
     const q = round[i];
     return (
-      <div className="mx-auto flex min-h-[90dvh] w-full max-w-xl flex-col gap-4 px-4 pb-6 pt-[max(16px,env(safe-area-inset-top))]">
+      <div className="mx-auto flex min-h-full w-full max-w-xl flex-col gap-4 px-4 pb-6 pt-[max(16px,env(safe-area-inset-top))]">
         <div className="flex items-center justify-between">
           <span className="chip border border-line">{i + 1} / {round.length}</span>
           <button className="btn !min-h-11" onClick={() => setRound(null)}><Icon name="x" /> Končaj</button>

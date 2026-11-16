@@ -85,7 +85,7 @@ export function Ring({ progress, size = 260, stroke = 18, color = "var(--accent)
 
 export function Screen({ title, onBack, right, children }: { title?: string; onBack?: () => void; right?: ReactNode; children: ReactNode }) {
   return (
-    <div className="mx-auto w-full max-w-xl px-4 pb-28 pt-[max(16px,env(safe-area-inset-top))]">
+    <div className="mx-auto w-full max-w-xl px-4 pb-8 pt-[max(16px,env(safe-area-inset-top))]">
       {(title || onBack) && (
         <header className="mb-4 flex items-center gap-2">
           {onBack && (

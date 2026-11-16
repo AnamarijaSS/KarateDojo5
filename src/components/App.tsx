@@ -33,7 +33,7 @@ function useHashRoute<T extends string>(def: T): [T, string | undefined, (v: T, 
     if (v === def && !a) history.pushState(null, "", location.pathname + location.search);
     else location.hash = h;
     setR([v, a]);
-    window.scrollTo(0, 0);
+    document.getElementById("scroller")?.scrollTo(0, 0);
   }, [def]);
   return [view, arg, go];
 }
@@ -62,18 +62,25 @@ function ClientApp() {
   }, []);
 
   if (!s.ready) return <Splash />;
-  if (!s.configured) return <Missing />;
-  if (!s.me) return <Onboarding />;
+  if (!s.configured) return <Scroll><Missing /></Scroll>;
+  if (!s.me) return <Scroll><Onboarding /></Scroll>;
+  // Ogrodje: zgoraj obvestila, v sredini drsna vsebina, spodaj meni.
+  // Meni ni "position: fixed", ker ga iPhone v aplikaciji na domačem zaslonu
+  // po zaprtju tipkovnice lahko pusti sredi zaslona.
   return (
-    <>
+    <div className="flex h-full flex-col">
       <Banners />
       {s.me.role === "parent" ? <ParentApp /> : <StudentApp />}
-    </>
+    </div>
   );
 }
 
+function Scroll({ children }: { children: React.ReactNode }) {
+  return <div id="scroller" className="h-full min-h-0 flex-1 overflow-y-auto overscroll-y-contain">{children}</div>;
+}
+
 function Splash() {
-  return <div className="grid min-h-dvh place-items-center"><img src="/icon.svg" alt="Nalagam" width={96} height={96} className="animate-pulse rounded-3xl" /></div>;
+  return <div className="grid h-full place-items-center"><img src="/icon.svg" alt="Nalagam" width={96} height={96} className="animate-pulse rounded-3xl" /></div>;
 }
 
 function Missing() {
@@ -89,7 +96,7 @@ function Banners() {
   const { s, override } = useDerived();
   const local = s.outbox.length;
   return (
-    <div className="sticky top-0 z-40 flex flex-col">
+    <div className="flex shrink-0 flex-col">
       {override && <div className="bg-warn-bg px-4 py-1 text-center text-base font-bold text-warn" data-testid="preizkusni-datum">Preizkusni datum: {fmtDate(override, true)}</div>}
       {!s.online && <div className="bg-line px-4 py-1 text-center text-base font-bold" data-testid="brez-povezave">Brez povezave. {local > 0 ? `${local} sprememb čaka na pošiljanje.` : "Vse je shranjeno v telefonu."}</div>}
       {s.error && (
@@ -101,7 +108,7 @@ function Banners() {
 
 function TabBar<T extends string>({ tabs, view, go }: { tabs: { v: T; label: string; icon: Parameters<typeof Icon>[0]["name"]; badge?: number; also?: T[] }[]; view: T; go: (v: T) => void }) {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-line bg-card pb-[env(safe-area-inset-bottom)]" aria-label="Glavni meni">
+    <nav className="shrink-0 border-t border-line bg-card pb-[env(safe-area-inset-bottom)]" aria-label="Glavni meni">
       <div className="mx-auto grid max-w-xl" style={{ gridTemplateColumns: `repeat(${tabs.length}, 1fr)` }}>
         {tabs.map((t) => {
           const active = view === t.v || t.also?.includes(view);
@@ -126,7 +133,7 @@ function StudentApp() {
   const { mistakes, s } = useDerived();
   const openMistakes = mistakes.filter((m) => !m.fixed_at).length;
 
-  if (timer) return <TimerScreen timer={timer} setTimer={setTimer} onExit={() => go("danes")} />;
+  if (timer) return <Scroll><TimerScreen timer={timer} setTimer={setTimer} onExit={() => go("danes")} /></Scroll>;
 
   let body;
   switch (view) {
@@ -140,7 +147,7 @@ function StudentApp() {
   }
   return (
     <>
-      {body}
+      <Scroll>{body}</Scroll>
       {s.lastSync && <BeltCelebration />}
       <TabBar view={view} go={(v) => go(v)} tabs={[
         { v: "danes", label: "Danes", icon: "home", also: ["trening"] },
@@ -194,7 +201,7 @@ function ParentApp() {
     document.addEventListener("visibilitychange", onVis);
     return () => { window.removeEventListener("pointerdown", touch); document.removeEventListener("visibilitychange", onVis); };
   }, []);
-  if (!unlocked) return <Lock onUnlock={() => { ls.set(UNLOCK_KEY, String(Date.now())); setUnlocked(true); void syncNow(); }} />;
+  if (!unlocked) return <Scroll><Lock onUnlock={() => { ls.set(UNLOCK_KEY, String(Date.now())); setUnlocked(true); void syncNow(); }} /></Scroll>;
 
   const back = () => go("nastavitve");
   let body;
@@ -217,7 +224,7 @@ function ParentApp() {
   }
   return (
     <>
-      {body}
+      <Scroll>{body}</Scroll>
       <TabBar view={view} go={(v) => go(v)} tabs={[
         { v: "domov", label: "Domov", icon: "home", also: ["teden"] },
         { v: "potrdi", label: "Potrdi", icon: "check", badge: pending.filter((e) => !e.local).length },
@@ -244,7 +251,7 @@ function Lock({ onUnlock }: { onUnlock: () => void }) {
     setBusy(false);
   }, [onUnlock]);
   return (
-    <div className="mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center gap-6 p-6">
+    <div className="mx-auto flex min-h-full max-w-md flex-col items-center justify-center gap-6 p-6">
       <Icon name="lock" size={48} className="text-accent" />
       <h1 className="text-2xl font-extrabold">Starševski način</h1>
       <PinPad onSubmit={submit} busy={busy} error={err} />

@@ -119,7 +119,7 @@ export function fmt(ms: number) {
 export function TimerFace({ t, remaining, progress, message, onCancel }: { t: TimerState; remaining: number; progress: number; message: string; onCancel: () => void }) {
   const isBreak = t.phase === "break";
   return (
-    <div className="flex min-h-[85dvh] flex-col items-center justify-center gap-8 px-4 text-center">
+    <div className="flex min-h-full flex-col items-center justify-center gap-8 px-4 text-center">
       <Ring progress={progress} size={280} color={isBreak ? "var(--ok)" : "var(--accent)"}>
         <span className="text-6xl font-extrabold tabular-nums" aria-live="off">{fmt(remaining)}</span>
         <span className="mt-1 text-lg font-bold text-muted">{isBreak ? "odmor" : "trening"}</span>
